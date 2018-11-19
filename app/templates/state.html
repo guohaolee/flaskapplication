@@ -1,0 +1,13 @@
+<!doctype html>
+
+<!-- basic way to link static css files to html file -->
+<link rel='stylesheet' type="text/css" href="{{url_for('static',filename='style.css')}}">
+
+<!-- Here, you can add python code inside the {% %} to check if variable exist.
+    If variable not exisit, then ask them enter or etc -->
+    
+{% if name %}
+    <h1>Your state is:  {{name}}</h1>
+{% else %}
+    <h1>Please enter your state</h1>
+{% endif %}
